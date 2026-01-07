@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width-device-width, intial-scale=1.0">
+    <title>ProWerk - Büroorganisation für handwerksbetriebe</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+     }
+header {
+  background: #0f172a;
+  color: #fff;
+  padding: 15px 0;
+  }
+
+.nav {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  }
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  }
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  }
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  }
+
+nav a:hover {
+    text-decoration: underline;
+  }
+
+/*hero*/
+  .hero {
+  background: linear-gradient(120deg, #2563eb, #22c55e);
+  color: white;
+  padding: 70px 20px;
+  text-aglin: center;
+  }
+
+ .hero h1 {
+   font-size: 2.8rem;
+   margin-bottom: 10px;
+   }
+
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: auto;
+    }
+
+  /*sections*/
+    section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    }
+
+  h2 {
+    color: #0f172a;
+    }
+
+  ul {
+    padding-left: 20px;
+    }
+
+/*login*/
+  .login-box {
+  max-width: 400px;
+  background: white;
+  padding: 30px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0,1);
+  }
+
+  input {
+    widht: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    }
+
+  button {
+    widht: 100%;
+    padding: 12px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    }
+
+  button:hover {
+    background: #1e40af;
+    }
+    
+  footer {
+    background: #0f172a;
+    color: white;
+    text-aglin: center;
+    padding: 20px;
+    }
+#termine {
+    max-widht:1000px;
+    margith: 60px auto;
+    padding:0 20px;
+    }
+
+    
+  </style>
+  </head>
+  
+  <body>
+   <header>
+
+  <div class="nav">
+  <div class="logo">ProWerk</div>
+    <nav>
+      <ul>
+        <li><a href="#start">Startseite</a></li>
+        <li><a href="#funktionen">Funktionen</a></li>
+        <li><a href="#ueber">Über ProWerk</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#login">Registrieren</a></li>
+        <li><a href="#termine">Termine</a></li>
+      </ul>
+    </nav>
+  </div>
+   </header> 
+
+
+<! startseite >
+<section id="start" class="hero">
+  <h1>Professionelle Büroorganisation für Handwerkabetriebe</h1>
+  <p>
+    ProWerk automatisiert Angebote; rechnungen und Kalkulationen - damit Sie mehr Zeit für Ihr handwerk haben.
+  </p>
+</section>
+
+<! Funktionen >
+  <section id="funktionen">
+    <h2>Kernfunktionen</h2>
+    <ul>
+      <li>Schnelle Angebotserstellung per App & Web</li>
+      <li>Automatische Rechnungs- & Kalkuklationsmodule</li>
+      <li>Zentrale Kundendatenbank mit Cloud-Sync</li>
+      <li>Kommunikation mit Firmeninhaber</li>
+      <li>Export & Offline-Funktionen</li>
+    </ul>
+  </section>
+
+<! Über uns >
+<section id="ueber">
+  <h2>Über ProWerk</h2>
+  <p>
+    Handwerksbetriebe verlieren täglich wertvolle Zeit durch amnuelle Büroprozesse.
+    ProWerk ist eine mobile und webbasierte Lösung, die Fehler reduziert und Zeit für das kerngeschäft schafft.
+  </p>
+</section>
+
+<! Login>
+<section id="login">
+  <h2 style="text-align:center">Login</h2>
+  <div class="login-box">
+    <input type="text" placeholder="Benutzername">
+    <input type="password" placeholder="Passwort">
+    <button>Anmelden</button>
+  </div>
+</section>
+
+<! Calendly>
+    <section id="termine">
+  <h2 style="text-align:center">Termin buchen</h2>
+  <p style="text-align:center; max-width:700px; margin:0 auto 18px;">
+    Buche direkt einen Termin für eine kurze Demo oder ein Erstgespräch – schnell und unkompliziert.
+  </p>
+
+  <! Calendly Inline-Widget >
+  <div class="calendly-inline-widget"
+       data-url="https://calendly.com/DEIN-CALENDLY-NAME/DEIN-TERMIN"
+       style="min-width:320px; height:700px;">
+  </div>
+
+  <! Calendly Script >
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  </section>
+    
+  </body>
+</html>

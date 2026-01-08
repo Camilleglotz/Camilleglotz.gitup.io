@@ -1,168 +1,147 @@
-<html lang="de">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registrieren – ProWerk</title>
 
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
-      color: #333;
-     }
-header {
-  background: #0f172a;
-  color: #fff;
-  padding: 15px 0;
-  }
-
-.nav {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  }
-
-.logo {
-  font-size: 1.6rem;
-  font-weight: bold;
-  }
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-  }
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  }
-
-nav a:hover {
-    text-decoration: underline;
-  }
-
-/*hero*/
-  .hero {
-  background: linear-gradient(120deg, #2563eb, #22c55e);
-  color: white;
-  padding: 70px 20px;
-  text-aglin: center;
-  }
-
- .hero h1 {
-   font-size: 2.8rem;
-   margin-bottom: 10px;
-   }
-
-  .hero p {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: auto;
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:#f4f6f8;
+      color:#333;
     }
 
-  /*sections*/
-    section {
-    max-width: 1000px;
-    margin: 60px auto;
-    padding: 0 20px;
+    header{
+      background:#0f172a;
+      color:#fff;
+      padding:15px 0;
     }
 
-  h2 {
-    color: #0f172a;
+    .nav{
+      max-width:1100px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:0 20px;
     }
 
-  ul {
-    padding-left: 20px;
-    }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
+    .logo{
+      font-size:1.6rem;
+      font-weight:bold;
     }
 
-    .register-box {
-      max-width: 400px;
-      margin: 100px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    nav ul{
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:flex;
+      gap:20px;
     }
 
-    h2 {
-      text-align: center;
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      font-weight:500;
     }
 
-    input, button {
-      width: 100%;
-      padding: 12px;
-      margin-top: 10px;
+    nav a:hover{
+      text-decoration:underline;
     }
 
-    button {
-      background: #2563eb;
-      border: none;
-      color: white;
-      font-size: 1rem;
-      cursor: pointer;
+    .register-box{
+      max-width:400px;
+      margin:80px auto;
+      background:#fff;
+      padding:30px;
+      border-radius:8px;
+      box-shadow:0 10px 20px rgba(0,0,0,0.1);
     }
 
-    button:hover {
-      background: #1e40af;
+    .register-box h2{
+      text-align:center;
+      margin-top:0;
+      color:#0f172a;
     }
 
-    .back {
-      text-align: center;
-      margin-top: 15px;
+    .register-box form{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
     }
 
-    .back a {
-      color: #2563eb;
-      text-decoration: none;
+    .register-box input{
+      width:100%;
+      padding:12px;
+      border:1px solid #cbd5e1;
+      border-radius:6px;
+      font-size:1rem;
+      box-sizing:border-box;
+    }
+
+    .register-box button{
+      width:100%;
+      padding:12px;
+      background:#2563eb;
+      border:none;
+      color:#fff;
+      font-size:1rem;
+      border-radius:6px;
+      cursor:pointer;
+    }
+
+    .register-box button:hover{
+      background:#1e40af;
+    }
+
+    .back{
+      text-align:center;
+      margin-top:15px;
+    }
+
+    .back a{
+      color:#2563eb;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    .back a:hover{
+      text-decoration:underline;
     }
   </style>
 </head>
 
 <body>
-<header>
-  <div class="nav">
-    <div class="logo">ProWerk</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Startseite</a></li>
-        <li><a href="funktionen.html">Funktionen</a></li>
-        <li><a href="ueber.html">Über ProWerk</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="registrieren.html">Registrieren</a></li>
-        <li><a href="termine.html">Termine</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <header>
+    <div class="nav">
+      <div class="logo">ProWerk</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="funktionen.html">Funktionen</a></li>
+          <li><a href="ueber.html">Über ProWerk</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="registrieren.html">Registrieren</a></li>
+          <li><a href="termine.html">Termine</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-
-<div class="register-box">
+  <div class="register-box">
     <h2>Registrieren</h2>
 
     <form>
-      <input type="text" placeholder="Benutzername">
-      <input type="email" placeholder="E-Mail">
-      <input type="password" placeholder="Passwort">
-      <button>Registrieren</button>
+      <input type="text" placeholder="Benutzername" required>
+      <input type="email" placeholder="E-Mail" required>
+      <input type="password" placeholder="Passwort" required>
+      <button type="submit">Registrieren</button>
     </form>
 
     <div class="back">
       <a href="login.html">← Zurück zum Login</a>
     </div>
   </div>
-
 </body>
 </html>

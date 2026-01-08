@@ -90,17 +90,21 @@ nav a:hover {
   padding: 30px;
   margin: auto;
   border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0,1);
-  }
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
 
+.login-box form {
+  display: flex;
+  flex-direction: column;
+}
   input {
-    widht: 100%;
+    width: 100%;
     padding: 10px;
     margin: 10px 0;
     }
 
   button {
-    widht: 100%;
+    width: 100%;
     padding: 12px;
     background: #2563eb;
     border: none;
@@ -120,7 +124,7 @@ nav a:hover {
     padding: 20px;
     }
 #termine {
-    max-widht:1000px;
+    max-width:1000px;
     margith: 60px auto;
     padding:0 20px;
     }
@@ -148,15 +152,23 @@ nav a:hover {
    </header> 
 
 
-<! Login>
 <section id="login">
   <h2 style="text-align:center">Login</h2>
+
   <div class="login-box">
-    <input type="text" placeholder="Benutzername">
-    <input type="password" placeholder="Passwort">
-    <button>Anmelden</button>
+    <form>
+      <input type="text" placeholder="Benutzername">
+      <input type="password" placeholder="Passwort">
+      <button type="submit">Anmelden</button>
+    </form>
+
+    <p style="text-align:center; margin-top:15px;">
+      Noch kein Konto?
+      <a href="registrieren.html">Jetzt registrieren</a>
+    </p>
   </div>
 </section>
+
     
   </body>
 </html>

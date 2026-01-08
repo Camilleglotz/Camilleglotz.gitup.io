@@ -1,209 +1,350 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewpoint" content="width-device-width, intial-scale=1.0">
-    <title>ProWerk - Büroorganisation für handwerksbetriebe</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProWerk – Büroorganisation für Handwerksbetriebe</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
-      color: #333;
-     }
-header {
-  background: #0f172a;
-  color: #fff;
-  padding: 15px 0;
-  }
-
-.nav {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  }
-
-.logo {
-  font-size: 1.6rem;
-  font-weight: bold;
-  }
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-  }
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  }
-
-nav a:hover {
-    text-decoration: underline;
-  }
-
-/*hero*/
-  .hero {
-  background: linear-gradient(120deg, #2563eb, #22c55e);
-  color: white;
-  padding: 70px 20px;
-  text-aglin: center;
-  }
-
- .hero h1 {
-   font-size: 2.8rem;
-   margin-bottom: 10px;
-   }
-
-  .hero p {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: auto;
+      background: radial-gradient(circle at top, #eef2ff, #f4f6f8 45%);
+      color: #0f172a;
     }
 
-  /*sections*/
-    section {
-    max-width: 1000px;
-    margin: 60px auto;
-    padding: 0 20px;
+
+    header {
+      background: #0f172a;
+      color: #fff;
+      padding: 15px 0;
     }
 
-  h2 {
-    color: #0f172a;
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      gap: 20px;
     }
 
-  ul {
-    padding-left: 20px;
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      white-space: nowrap;
     }
 
-/*login*/
-  .login-box {
-  max-width: 400px;
-  background: white;
-  padding: 30px;
-  margin: auto;
-  border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0,1);
-  }
-
-  input {
-    widht: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
     }
 
-  button {
-    widht: 100%;
-    padding: 12px;
-    background: #2563eb;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
     }
 
-  button:hover {
-    background: #1e40af;
-    }
-    
-  footer {
-    background: #0f172a;
-    color: white;
-    text-aglin: center;
-    padding: 20px;
-    }
-#termine {
-    max-widht:1000px;
-    margith: 60px auto;
-    padding:0 20px;
+    nav a:hover {
+      text-decoration: underline;
     }
 
-    
+    /* Hero */
+    .hero {
+      background: linear-gradient(120deg, #2563eb, #22c55e);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .hero-inner {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      margin: 0 0 10px;
+      line-height: 1.15;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 70ch;
+      margin: 0 auto 18px;
+      line-height: 1.7;
+      opacity: 0.95;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: #0f172a;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #111c36;
+    }
+
+    .btn-ghost {
+      background: rgba(255,255,255,0.16);
+      color: white;
+      border-color: rgba(255,255,255,0.35);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255,255,255,0.24);
+    }
+
+ 
+    .container {
+      max-width: 1000px;
+      margin: 55px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #0f172a;
+      margin: 0 0 10px;
+    }
+
+    p {
+      line-height: 1.8;
+      margin: 0 0 14px;
+      color: #334155;
+      max-width: 75ch;
+    }
+
+    /* Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      border: 1px solid rgba(15,23,42,0.06);
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 1.15rem;
+      color: #0f172a;
+    }
+
+   
+    .feature-list {
+      padding-left: 18px;
+      margin: 10px 0 0;
+      color: #334155;
+    }
+
+    .feature-list li {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    /* Video */
+    .video-wrap {
+      margin-top: 8px;
+    }
+
+    .video {
+      width: 100%;
+      max-width: 900px;
+      aspect-ratio: 16 / 9;
+      border-radius: 16px;
+      overflow: hidden;
+      margin: 12px auto 0;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+      border: 1px solid rgba(15,23,42,0.06);
+      background: #000;
+    }
+
+    .video iframe,
+    .video video {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    .hint {
+      font-size: 0.95rem;
+      color: #475569;
+      margin-top: 8px;
+    }
+
+
+    .cta {
+      margin-top: 30px;
+      padding: 24px;
+      border-radius: 18px;
+      background: linear-gradient(120deg, rgba(37,99,235,0.12), rgba(34,197,94,0.12));
+      border: 1px solid rgba(15,23,42,0.06);
+      text-align: center;
+    }
+
+    .cta p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+ 
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    /* Responsive */
+    @media (max-width: 850px) {
+      .grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2.1rem; }
+    }
   </style>
-  </head>
-  
-  <body>
-   <header>
+</head>
 
-  <div class="nav">
-  <div class="logo">ProWerk</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Startseite</a></li>
-        <li><a href="funktionen.html">Funktionen</a></li>
-        <li><a href="ueber.html">Über ProWerk</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="registrieren.html">Registrieren</a></li>
-        <li><a href="termine.html">Termine</a></li>
-      </ul>
-    </nav>
-  </div>
-   </header> 
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo">ProWerk</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="ueber.html">Über ProWerk</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="registrieren.html">Registrieren</a></li>
+          <li><a href="termine.html">Termine</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
 
-<! startseite >
-<section id="start" class="hero">
-  <h1>Professionelle Büroorganisation für Handwerkabetriebe</h1>
-  <p>
-    ProWerk automatisiert Angebote; Rechnungen und Kalkulationen - damit Sie mehr Zeit für Ihr handwerk haben.
-  </p>
-</section>
+  <section id="start" class="hero">
+    <div class="hero-inner">
+      <h1>Professionelle Büroorganisation für Handwerksbetriebe</h1>
+      <p>
+        ProWerk automatisiert Angebote, Rechnungen und Kalkulationen – damit bleibt mehr Zeit
+        fürs Handwerk statt für Papierkram.
+      </p>
 
-<! Funktionen >
-  <section id="funktionen">
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="registrieren.html">Jetzt registrieren</a>
+        <a class="btn btn-ghost" href="#pitchvideo">Pitch-Video ansehen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pitch-Video -->
+  <section id="pitchvideo" class="container">
+    <h2>Pitch-Video</h2>
+    <p>
+      In 45 Sekunden siehst du, welches Problem ProWerk löst und wie Handwerksbetriebe
+      dadurch Zeit sparen.
+    </p>
+
+    <div class="video-wrap">
+      <div class="video">
+        <!-- OPTION A: YouTube (ersetze VIDEO_ID) -->
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          title="ProWerk Pitch Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+
+        <!-- OPTION B: Eigene MP4 (wenn du das willst, iframe oben löschen und das hier nehmen)
+        <video controls poster="bilder/preview.jpg">
+          <source src="video/prowerk-pitch.mp4" type="video/mp4">
+          Dein Browser unterstützt kein Video.
+        </video>
+        -->
+      </div>
+
+      <p class="hint">
+        Tipp: Wenn du kein YouTube nutzt, lege eine Datei unter <strong>video/prowerk-pitch.mp4</strong> ab.
+      </p>
+    </div>
+  </section>
+
+
+  <section id="funktionen" class="container">
     <h2>Kernfunktionen</h2>
-    <ul>
-      <li>Schnelle Angebotserstellung per App & Web</li>
-      <li>Automatische Rechnungs- & Kalkuklationsmodule</li>
-      <li>Zentrale Kundendatenbank mit Cloud-Sync</li>
-      <li>Kommunikation mit Firmeninhaber</li>
-      <li>Export & Offline-Funktionen</li>
-    </ul>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Alles in einem System</h3>
+        <ul class="feature-list">
+          <li>Schnelle Angebotserstellung per App & Web</li>
+          <li>Automatische Rechnungs- & Kalkulationsmodule</li>
+          <li>Zentrale Kundendatenbank mit Cloud-Sync</li>
+          <li>Termine & Übersicht an einem Ort</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Vorteile für Handwerksbetriebe</h3>
+        <ul class="feature-list">
+          <li>Weniger Bürozeit & weniger Fehler</li>
+          <li>Mehr Überblick über Kunden und Aufträge</li>
+          <li>Dokumente digital – überall verfügbar</li>
+          <li>Export- & Offline-Funktionen</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cta">
+      <h2>Bereit für weniger Büroarbeit?</h2>
+      <p>Starte jetzt mit ProWerk und konzentriere dich auf dein Kerngeschäft.</p>
+      <a class="btn btn-primary" href="registrieren.html">Jetzt starten</a>
+      <a class="btn btn-ghost" href="funktionen.html">Mehr Funktionen</a>
+    </div>
   </section>
 
-<! Über uns >
-<section id="ueber">
-  <h2>Über ProWerk</h2>
-  <p>
-    Handwerksbetriebe verlieren täglich wertvolle Zeit durch manuelle Büroprozesse.
-    ProWerk ist eine mobile und webbasierte Lösung, die Fehler reduziert und Zeit für das kerngeschäft schafft.
-  </p>
-</section>
-
-<! Login>
-<section id="login">
-  <h2 style="text-align:center">Login</h2>
-  <div class="login-box">
-    <input type="text" placeholder="Benutzername">
-    <input type="password" placeholder="Passwort">
-    <button>Anmelden</button>
-  </div>
-</section>
-
-<! Calendly>
-    <section id="termine">
-  <h2 style="text-align:center">Termin buchen</h2>
-  <p style="text-align:center; max-width:700px; margin:0 auto 18px;">
-    Buche direkt einen Termin für eine kurze Demo oder ein Erstgespräch – schnell und unkompliziert.
-  </p>
-
-  <! Calendly Inline-Widget >
-  <div class="calendly-inline-widget"
-       data-url="https://calendly.com/DEIN-CALENDLY-NAME/DEIN-TERMIN"
-       style="min-width:320px; height:700px;">
-  </div>
-
-  <! Calendly Script >
-  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <!-- Über uns (kurz auf Startseite) -->
+  <section id="ueber" class="container">
+    <h2>Über ProWerk</h2>
+    <p>
+      Handwerksbetriebe verlieren täglich wertvolle Zeit durch manuelle Büroprozesse und
+      unübersichtliche Dokumente. ProWerk ist eine mobile und webbasierte Lösung, die Prozesse
+      vereinfacht, Fehler reduziert und Zeit für das Kerngeschäft schafft.
+    </p>
+    <a class="btn btn-primary" href="ueber.html">Mehr über ProWerk</a>
   </section>
-    
-  </body>
+
+  <footer>
+    © 2026 ProWerk – Büroorganisation für Handwerksbetriebe
+  </footer>
+</body>
 </html>

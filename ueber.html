@@ -1,135 +1,178 @@
 <html>
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f4f6f8;
-  color: #333;
-}
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über ProWerk – Büroorganisation für Handwerksbetriebe</title>
 
-/* Header */
-header {
-  background: #0f172a;
-  color: #fff;
-  padding: 15px 0;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #eef2ff, #f4f6f8 45%);
+      color: #333;
+    }
 
-.nav {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
+    /* Header */
+    header {
+      background: #0f172a;
+      color: #fff;
+      padding: 15px 0;
+    }
 
-.logo {
-  font-size: 1.6rem;
-  font-weight: bold;
-}
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-}
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-}
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
 
-nav a:hover {
-  text-decoration: underline;
-}
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
 
-/* Hero */
-.hero {
-  background: linear-gradient(120deg, #2563eb, #22c55e);
-  color: white;
-  padding: 70px 20px;
-  text-align: center;
-}
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-.hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
-}
+    /* Seite */
+    .page {
+      max-width: 1000px;
+      margin: 70px auto;
+      padding: 0 20px;
+    }
 
-.hero p {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: auto;
-}
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
 
-/* Sections */
-section {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 0 20px;
-}
+    h2 {
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
 
-h2 {
-  color: #0f172a;
-}
+    p {
+      line-height: 1.8;
+      margin-bottom: 14px;
+      max-width: 75ch;
+    }
 
-ul {
-  padding-left: 20px;
-}
+    .lead {
+      font-size: 1.1rem;
+      color: #334155;
+      margin-bottom: 30px;
+    }
 
-/* Login */
-.login-box {
-  max-width: 400px;
-  background: white;
-  padding: 30px;
-  margin: auto;
-  border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
 
-input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-}
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      border: 1px solid rgba(15,23,42,0.06);
+    }
 
-button {
-  width: 100%;
-  padding: 12px;
-  background: #2563eb;
-  border: none;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-}
+    .card h2 {
+      font-size: 1.2rem;
+    }
 
-button:hover {
-  background: #1e40af;
-}
+    ul {
+      padding-left: 18px;
+    }
 
-/* Termine */
-#termine {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 0 20px;
-}
+    li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
 
-/* Footer */
-footer {
-  background: #0f172a;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-</style>
+    /* Call to Action */
+    .cta {
+      margin-top: 40px;
+      padding: 25px;
+      border-radius: 18px;
+      background: linear-gradient(120deg, rgba(37,99,235,0.15), rgba(34,197,94,0.15));
+      border: 1px solid rgba(15,23,42,0.08);
+      text-align: center;
+    }
+
+    .cta h2 {
+      margin-top: 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 12px 8px 0;
+      padding: 12px 18px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      background: #1e40af;
+    }
+
+    .btn-outline {
+      background: white;
+      color: #2563eb;
+      border: 1px solid rgba(37,99,235,0.4);
+    }
+
+    .btn-outline:hover {
+      background: rgba(37,99,235,0.08);
+    }
+
+    /* Responsive */
+    @media (max-width: 800px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 80px;
+    }
+  </style>
+</head>
+
 <body>
-   <header>
 
+<header>
   <div class="nav">
-  <div class="logo">ProWerk</div>
+    <div class="logo">ProWerk</div>
     <nav>
       <ul>
         <li><a href="index.html">Startseite</a></li>
@@ -141,60 +184,63 @@ footer {
       </ul>
     </nav>
   </div>
-   </header> 
+</header>
 
-
-  
-<section id="ueber">
+<main class="page">
   <h1>Über ProWerk</h1>
-
-  <p>
+  <p class="lead">
     Handwerksbetriebe verlieren täglich wertvolle Zeit durch manuelle Büroprozesse,
     unübersichtliche Dokumente und doppelte Arbeitsschritte.
     Genau hier setzt <strong>ProWerk</strong> an.
   </p>
 
-  <h2>Unsere Idee</h2>
-  <p>
-    ProWerk ist eine mobile und webbasierte Lösung, die speziell für die Anforderungen
-    von Handwerksbetrieben entwickelt wurde. Unser Ziel ist es, Büroarbeit zu
-    vereinfachen, Fehler zu reduzieren und mehr Zeit für das Kerngeschäft zu schaffen.
-  </p>
+  <div class="cards">
+    <div class="card">
+      <h2>Unsere Idee</h2>
+      <p>
+        ProWerk ist eine mobile und webbasierte Lösung, die speziell für die Anforderungen
+        von Handwerksbetrieben entwickelt wurde.
+      </p>
+    </div>
 
-  <h2>Das Problem</h2>
-  <p>
-    Viele Betriebe arbeiten noch mit Papier, Excel-Listen oder mehreren Programmen
-    gleichzeitig. Das führt zu Zeitverlust, Fehlern und unnötigem Stress im Alltag.
-  </p>
+    <div class="card">
+      <h2>Das Problem</h2>
+      <p>
+        Viele Betriebe arbeiten noch mit Papier, Excel-Listen oder mehreren Programmen
+        gleichzeitig – das kostet Zeit und verursacht Fehler.
+      </p>
+    </div>
 
-  <h2>Unsere Lösung</h2>
-  <p>
-    ProWerk bündelt alle wichtigen Funktionen an einem Ort:
-    Angebotserstellung, Rechnungen, Kundendaten und Terminübersichten – jederzeit
-    abrufbar über App oder Web.
-  </p>
+    <div class="card">
+      <h2>Unsere Lösung</h2>
+      <p>
+        ProWerk bündelt alle wichtigen Funktionen an einem Ort:
+        Angebote, Rechnungen, Kundendaten und Termine – jederzeit abrufbar.
+      </p>
+    </div>
 
-  <h2>Unsere Werte</h2>
-  <ul>
-    <li><strong>Praxisnah:</strong> Entwickelt für echte Handwerksbetriebe</li>
-    <li><strong>Einfach:</strong> Klare Bedienung ohne unnötige Funktionen</li>
-    <li><strong>Zuverlässig:</strong> Sichere Daten und stabile Prozesse</li>
-    <li><strong>Digital:</strong> Modern, flexibel und zukunftsorientiert</li>
-  </ul>
+    <div class="card">
+      <h2>Unsere Werte</h2>
+      <ul>
+        <li><strong>Praxisnah:</strong> Für echte Handwerksbetriebe</li>
+        <li><strong>Einfach:</strong> Klare Bedienung ohne Ballast</li>
+        <li><strong>Zuverlässig:</strong> Sichere Daten & stabile Prozesse</li>
+        <li><strong>Digital:</strong> Modern & zukunftsorientiert</li>
+      </ul>
+    </div>
+  </div>
 
-  <h2>Warum ProWerk?</h2>
-  <p>
-    ProWerk wurde mit dem Fokus auf einfache Bedienung und maximalen Nutzen entwickelt.
-    Keine komplizierten Menüs, sondern genau das, was im Arbeitsalltag wirklich gebraucht wird.
-  </p>
+  <div class="cta">
+    <h2>Bereit für weniger Büroarbeit?</h2>
+    <p>Starte jetzt mit ProWerk und konzentriere dich auf dein Kerngeschäft.</p>
+    <a href="registrieren.html" class="btn">Jetzt registrieren</a>
+    <a href="funktionen.html" class="btn btn-outline">Funktionen ansehen</a>
+  </div>
+</main>
 
-  <h2>Unsere Vision</h2>
-  <p>
-    Wir möchten Handwerksbetriebe langfristig bei der Digitalisierung unterstützen
-    und Büroarbeit so einfach wie möglich machen.
-  </p>
-</section>
+<footer>
+  © 2026 ProWerk – Büroorganisation für Handwerksbetriebe
+</footer>
 
-    
-  </body>
+</body>
 </html>

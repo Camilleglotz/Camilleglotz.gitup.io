@@ -1,0 +1,193 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard – ProWerk</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:#f4f6f8;
+      color:#333;
+    }
+
+    header{
+      background:#0f172a;
+      color:#fff;
+      padding:15px 0;
+    }
+
+    .nav{
+      max-width:1100px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:0 20px;
+    }
+
+    .logo{
+      font-size:1.6rem;
+      font-weight:bold;
+    }
+
+    nav ul{
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:flex;
+      gap:20px;
+    }
+
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    nav a:hover{
+      text-decoration:underline;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:60px auto;
+      padding:0 20px;
+    }
+
+    h1{
+      color:#0f172a;
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#fff;
+      border-radius:8px;
+      padding:25px;
+      box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .card h2{
+      margin-top:0;
+      color:#0f172a;
+    }
+
+    .card p{
+      color:#555;
+      line-height:1.5;
+    }
+
+    .card ul{
+      padding-left:18px;
+      margin:15px 0;
+    }
+
+    .card li{
+      margin-bottom:6px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:15px;
+      padding:10px 18px;
+      background:#2563eb;
+      color:#fff;
+      text-decoration:none;
+      border-radius:6px;
+      font-weight:500;
+    }
+
+    .btn:hover{
+      background:#1e40af;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px 0;
+      background:#0f172a;
+      color:#fff;
+      margin-top:60px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">ProWerk</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="termine.html">Termine</a></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <h1>Dashboard</h1>
+
+  <div class="grid">
+
+    <div class="card">
+      <h2>Rechnungen verwalten</h2>
+      <p>
+        Lade Rechnungen hoch, behalte den Überblick über Zahlungen
+        und verwalte alle Dokumente zentral.
+      </p>
+      <ul>
+        <li>Rechnungen hochladen</li>
+        <li>Übersicht aller Dokumente</li>
+        <li>Status & Archivierung</li>
+      </ul>
+      <a href="#" class="btn">Zu den Rechnungen</a>
+    </div>
+
+  
+    <div class="card">
+      <h2>Angebote erstellen</h2>
+      <p>
+        Erstelle professionelle Angebote schnell und einfach
+        direkt im System.
+      </p>
+      <ul>
+        <li>Neue Angebote anlegen</li>
+        <li>Positionen & Preise</li>
+        <li>PDF-Export</li>
+      </ul>
+      <a href="#" class="btn">Angebot erstellen</a>
+    </div>
+
+ 
+    <div class="card">
+      <h2>Termine planen</h2>
+      <p>
+        Plane deine Termine übersichtlich und behalte alle
+        Aufträge im Blick.
+      </p>
+      <ul>
+        <li>Neue Termine eintragen</li>
+        <li>Wochen- & Tagesübersicht</li>
+        <li>Synchronisation</li>
+      </ul>
+      <a href="#" class="btn">Zu den Terminen</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2026 ProWerk – Büroorganisation für Handwerksbetriebe
+</footer>
+
+</body>
+</html>

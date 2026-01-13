@@ -162,6 +162,14 @@ nav a:hover {
       <button type="submit">Anmelden</button>
     </form>
 
+<script>
+      document.getElementById("loginForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        window.location.href = "dashboard.html";
+      });
+    </script>
+
+    
     <p style="text-align:center; margin-top:15px;">
       Noch kein Konto?
       <a href="registrieren.html">Jetzt registrieren</a>

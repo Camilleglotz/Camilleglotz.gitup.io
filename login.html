@@ -1,186 +1,193 @@
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewpoint" content="width-device-width, intial-scale=1.0">
-    <title>ProWerk - Büroorganisation für handwerksbetriebe</title>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProWerk – Login</title>
 
   <style>
-    body {
-      margin: 0;
+    body{
+      margin:0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
-      color: #333;
-     }
-header {
-  background: #0f172a;
-  color: #fff;
-  padding: 15px 0;
-  }
+      background: radial-gradient(circle at top, #eef2ff, #f4f6f8 45%);
+      color:#0f172a;
 
-.nav {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  }
-
-.logo {
-  font-size: 1.6rem;
-  font-weight: bold;
-  }
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-  }
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  }
-
-nav a:hover {
-    text-decoration: underline;
-  }
-
-/*hero*/
-  .hero {
-  background: linear-gradient(120deg, #2563eb, #22c55e);
-  color: white;
-  padding: 70px 20px;
-  text-aglin: center;
-  }
-
- .hero h1 {
-   font-size: 2.8rem;
-   margin-bottom: 10px;
-   }
-
-  .hero p {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: auto;
+      
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
     }
 
-  /*sections*/
-    section {
-    max-width: 1000px;
-    margin: 60px auto;
-    padding: 0 20px;
+    header{
+      background:#0f172a;
+      color:#fff;
+      padding:15px 0;
     }
 
-  h2 {
-    color: #0f172a;
+    .nav{
+      max-width:1100px;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 20px;
+      gap:20px;
     }
 
-  ul {
-    padding-left: 20px;
+    .logo{
+      font-size:1.6rem;
+      font-weight:bold;
+      white-space:nowrap;
     }
 
-
-  .login-box {
-  max-width: 400px;
-  background: white;
-  padding: 30px;
-  margin: auto;
-  border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.login-box form {
-  display: flex;
-  flex-direction: column;
-}
-  input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    nav ul{
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
     }
 
-  button {
-    width: 100%;
-    padding: 12px;
-    background: #2563eb;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      font-weight:500;
     }
 
-  button:hover {
-    background: #1e40af;
-    }
+    nav a:hover{ text-decoration:underline; }
+
     
-  footer {
-  background: #0f172a;
-  color: white;
-  text-align: center;
-  padding: 12px 10px;
-  font-size: 0.85rem;
-}
-#termine {
-    max-width:1000px;
-    margith: 60px auto;
-    padding:0 20px;
+    main{
+      flex:1;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:40px 20px;
     }
-    
 
+    .login-box{
+      width:100%;
+      max-width:420px;
+      background:#fff;
+      padding:26px;
+      border-radius:16px;
+      border:1px solid rgba(15,23,42,0.08);
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+      text-align:center;
+    }
+
+    .login-box h2{
+      margin:0 0 18px;
+      color:#0f172a;
+      font-size:1.6rem;
+    }
+
+    .login-box input{
+      width:100%;
+      padding:12px 12px;
+      margin:10px 0;
+      border:1px solid #cbd5e1;
+      border-radius:10px;
+      font-size:1rem;
+      outline:none;
+      box-sizing:border-box;
+    }
+
+    .login-box input:focus{
+      border-color:#2563eb;
+      box-shadow:0 0 0 3px rgba(37,99,235,0.15);
+    }
+
+    .login-box button{
+      width:100%;
+      padding:12px;
+      margin-top:10px;
+      border:none;
+      border-radius:12px;
+      background:#2563eb;
+      color:#fff;
+      font-weight:700;
+      font-size:1rem;
+      cursor:pointer;
+    }
+
+    .login-box button:hover{
+      background:#1e40af;
+    }
+
+    .hint{
+      margin-top:14px;
+      font-size:0.95rem;
+      color:#334155;
+    }
+
+    .hint a{
+      color:#2563eb;
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    .hint a:hover{
+      text-decoration:underline;
+    }
+
+    footer{
+      background:#0f172a;
+      color:#fff;
+      text-align:center;
+      padding:12px 10px;
+      font-size:0.85rem;
+    }
+
+    footer a{
+      color:#fff;
+      text-decoration:underline;
+      margin-left:6px;
+    }
   </style>
-  </head>
-  
-  <body>
-   <header>
+</head>
 
-  <div class="nav">
-  <div class="logo">ProWerk</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Startseite</a></li>
-        <li><a href="ueber.html">Über ProWerk</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="registrieren.html">Registrieren</a></li>
-        <li><a href="termine.html">Termine</a></li>
-      </ul>
-    </nav>
-  </div>
-   </header> 
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo">ProWerk</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="ueber.html">Über ProWerk</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="registrieren.html">Registrieren</a></li>
+          <li><a href="termine.html">Termine</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <section id="login">
-  <h2 style="text-align:center">Login</h2>
+  <main>
+    <div class="login-box">
+      <h2>Login</h2>
 
-  <div class="login-box">
+      <input type="text" placeholder="Benutzername" required>
+      <input type="password" placeholder="Passwort" required>
 
+      <button type="button" id="loginBtn">Anmelden</button>
 
-    <input type="text" placeholder="Benutzername" required>
-    <input type="password" placeholder="Passwort" required>
+      <div class="hint">
+        Noch kein Konto? <a href="registrieren.html">Jetzt registrieren</a>
+      </div>
+    </div>
+  </main>
 
-    <!-- Button -->
-    <button type="button" id="loginBtn">Anmelden</button>
-
-   
-    <script>
-      document.getElementById("loginBtn").addEventListener("click", function () {
-        window.location.href = "app.html";
-      });
-    </script>
-
-    <p style="text-align:center; margin-top:15px;">
-      Noch kein Konto?
-      <a href="registrieren.html">Jetzt registrieren</a>
-    </p>
-
-  </div>
-</section>
-    
-<footer>
+  <footer>
     © 2026 ProWerk – Büroorganisation für Handwerksbetriebe
-   <a href="impressum.html">Impressum</a>
-</footer>
-  </body>
+    <a href="impressum.html">Impressum</a>
+  </footer>
+
+  <script>
+    document.getElementById("loginBtn").addEventListener("click", function () {
+      window.location.href = "app.html";
+    });
+  </script>
+</body>
 </html>

@@ -1,15 +1,19 @@
-<html>
+<html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Registrieren – ProWerk</title>
 
   <style>
     body{
       margin:0;
-      font-family:Arial, Helvetica, sans-serif;
-      background:#f4f6f8;
-      color:#333;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #eef2ff, #f4f6f8 45%);
+      color:#0f172a;
+
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
     }
 
     header{
@@ -20,16 +24,18 @@
 
     .nav{
       max-width:1100px;
-      margin:auto;
+      margin:0 auto;
       display:flex;
-      justify-content:space-between;
       align-items:center;
+      justify-content:space-between;
       padding:0 20px;
+      gap:20px;
     }
 
     .logo{
       font-size:1.6rem;
       font-weight:bold;
+      white-space:nowrap;
     }
 
     nav ul{
@@ -38,6 +44,8 @@
       padding:0;
       display:flex;
       gap:20px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
     }
 
     nav a{
@@ -46,23 +54,32 @@
       font-weight:500;
     }
 
-    nav a:hover{
-      text-decoration:underline;
+    nav a:hover{ text-decoration:underline; }
+
+    /* MAIN */
+    main{
+      flex:1;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px 20px;
     }
 
     .register-box{
-      max-width:400px;
-      margin:80px auto;
+      width:100%;
+      max-width:420px;
       background:#fff;
-      padding:30px;
-      border-radius:8px;
-      box-shadow:0 10px 20px rgba(0,0,0,0.1);
+      padding:26px;
+      border-radius:16px;
+      border:1px solid rgba(15,23,42,0.08);
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+      text-align:center;
     }
 
     .register-box h2{
-      text-align:center;
-      margin-top:0;
+      margin:0 0 18px;
       color:#0f172a;
+      font-size:1.6rem;
     }
 
     .register-box form{
@@ -73,21 +90,29 @@
 
     .register-box input{
       width:100%;
-      padding:12px;
+      padding:12px 12px;
       border:1px solid #cbd5e1;
-      border-radius:6px;
+      border-radius:10px;
       font-size:1rem;
+      outline:none;
       box-sizing:border-box;
+    }
+
+    .register-box input:focus{
+      border-color:#2563eb;
+      box-shadow:0 0 0 3px rgba(37,99,235,0.15);
     }
 
     .register-box button{
       width:100%;
       padding:12px;
+      margin-top:6px;
       background:#2563eb;
       border:none;
       color:#fff;
+      font-weight:700;
       font-size:1rem;
-      border-radius:6px;
+      border-radius:12px;
       cursor:pointer;
     }
 
@@ -96,27 +121,34 @@
     }
 
     .back{
-      text-align:center;
-      margin-top:15px;
+      margin-top:14px;
+      font-size:0.95rem;
+      color:#334155;
     }
 
     .back a{
       color:#2563eb;
       text-decoration:none;
-      font-weight:500;
+      font-weight:600;
     }
 
     .back a:hover{
       text-decoration:underline;
     }
-    
-  footer {
-  background: #0f172a;
-  color: white;
-  text-align: center;
-  padding: 12px 10px;
-  font-size: 0.85rem;
-}
+
+    footer{
+      background:#0f172a;
+      color:#fff;
+      text-align:center;
+      padding:12px 10px;
+      font-size:0.85rem;
+    }
+
+    footer a{
+      color:#fff;
+      text-decoration:underline;
+      margin-left:6px;
+    }
   </style>
 </head>
 
@@ -136,26 +168,26 @@
     </div>
   </header>
 
-  <div class="register-box">
-    <h2>Registrieren</h2>
+  <main>
+    <div class="register-box">
+      <h2>Registrieren</h2>
 
-    <form>
-      <input type="text" placeholder="Benutzername" required>
-      <input type="email" placeholder="E-Mail" required>
-      <input type="password" placeholder="Passwort" required>
-      <button type="submit">Registrieren</button>
-    </form>
+      <form>
+        <input type="text" placeholder="Benutzername" required>
+        <input type="email" placeholder="E-Mail" required>
+        <input type="password" placeholder="Passwort" required>
+        <button type="submit">Registrieren</button>
+      </form>
 
-    <div class="back">
-      <a href="login.html">← Zurück zum Login</a>
+      <div class="back">
+        <a href="login.html">← Zurück zum Login</a>
+      </div>
     </div>
-  </div>
+  </main>
 
-  
-  <footer class="footer">
-  © 2026 ProWerk – Büroorganisation für Handwerksbetriebe |
-  <a href="impressum.html">Impressum</a>
-</footer>
-  
+  <footer>
+    © 2026 ProWerk – Büroorganisation für Handwerksbetriebe
+    <a href="impressum.html">Impressum</a>
+  </footer>
 </body>
 </html>

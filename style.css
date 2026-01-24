@@ -222,7 +222,7 @@ p{
   margin-top:18px;
 }
 
-/* Variante: 2 Spalten Layout */
+
 .grid-2{
   display:grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -384,4 +384,35 @@ footer{
 @media (max-width: 850px){
   .grid-2{ grid-template-columns: 1fr; }
   .hero h1{ font-size:2.1rem; }
+}
+
+
+.hero-outer{
+  padding: 60px 20px;   /* Abstand nach oben/unten */
+}
+
+.hero-box{
+  max-width: 1000px;
+  margin: 0 auto;       /* zentrieren */
+  padding: 70px 40px;
+  background: linear-gradient(120deg, var(--blue), var(--green));
+  color: #fff;
+  border-radius: 6px;   /* wie "Kästchen" */
+  text-align: center;
+}
+
+.hero-box h1{
+  color: #fff;
+  font-size: 2.6rem;
+  margin: 0 0 10px;
+  line-height: 1.15;
+}
+
+.hero-box p{
+  color: #fff;
+  font-size: 1.15rem;
+  max-width: 70ch;
+  margin: 0 auto 18px;
+  line-height: 1.7;
+  opacity: 0.95;
 }

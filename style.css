@@ -416,3 +416,19 @@ footer{
   line-height: 1.7;
   opacity: 0.95;
 }
+
+.hero-outer{
+  max-width: none;   /* damit section-Regeln nicht reinfunken */
+  margin: 0;
+  padding: 60px 20px;
+}
+
+.hero-box{
+  max-width: 1000px;
+  margin: 0 auto;    /* zentrieren */
+  padding: 70px 40px;
+  background: linear-gradient(120deg, var(--blue), var(--green));
+  color: #fff;
+  border-radius: 6px;
+  text-align: center;
+}
